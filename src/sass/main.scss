@@ -1,5 +1,24 @@
 @import './utils/variables';
 @import './utils/breakpoints';
 @import './components/body';
+@import './components/header-main';
+@import './components/header-logo';
+@import './components/header-modal';
+@import './components/header-nav';
+@import './components/header-form-seach';
 @import './components/theme-switcher';
 @import './components/theme-switcher-container';
+@import './components/header-burger-menu';
+
+
+// @media (min-width: $mobile) {
+//     background-color: $bg-color-primary;
+// }
+
+// @media screen and (min-width: $tablet) {
+//     // background-color: yellow;
+// }
+
+// @media screen and (min-width: $desktop) {
+//     // background-color: tomato;
+// }

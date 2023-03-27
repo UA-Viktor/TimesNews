@@ -1,0 +1,63 @@
+.modal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  height: 90vh;
+  width: 100%;
+
+  // flex-direction: column;
+
+  .header-nav-ul {
+    display: none;
+  }
+
+  .theme-switcher-container {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: static;
+    height: 44px;
+    margin-left: 48px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    .header-nav-ul {
+      display: flex;
+    }
+
+    .theme-switcher-container {
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 102px;
+  }
+}
+
+.modal.is-hidden {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .header-nav-ul {
+    display: flex;
+  }
+
+  .theme-switcher-container {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet) {
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+}

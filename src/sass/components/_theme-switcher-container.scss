@@ -1,5 +1,7 @@
 .theme-switcher-container {
-  display: none;
+  // display: none;
+  // position: absolute;
+  // right: 0;
 
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -49,7 +51,7 @@
 
 
 .theme-switcher-svg {
-  display: none;
+  // display: none;
 
   @media screen and (min-width: $tablet) {
     display: block;
@@ -65,7 +67,7 @@
 }
 
 .dark .theme-switcher-svg.light {
-    stroke: $bg-color-primary;
+    stroke: $text-color-dark;
 }
 
 .theme-switcher-svg.dark {
