@@ -1,2 +1,0 @@
-!function(){var e="THEME";body=document.querySelector("body"),themeSwitcher=document.querySelector(".theme-switcher"),(asd=function(){localStorage.getItem(e)&&(body.classList.toggle(localStorage.getItem(e)),"dark"===localStorage.getItem(e)&&(themeSwitcher.checked=!0)),themeSwitcher.addEventListener("change",(function(t){t.target.checked?(body.classList.toggle("dark"),localStorage.setItem(e,"dark")):(body.classList.toggle("dark"),localStorage.setItem(e,"light"))}))})()}();
-//# sourceMappingURL=index.5ade207c.js.map

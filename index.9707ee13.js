@@ -1,2 +1,0 @@
-body=document.querySelector("body"),themeSwitcher=document.querySelector(".theme-switcher"),(asd=()=>{localStorage.getItem("THEME")&&(body.classList.toggle(localStorage.getItem("THEME")),"dark"===localStorage.getItem("THEME")&&(themeSwitcher.checked=!0)),themeSwitcher.addEventListener("change",(e=>{e.target.checked?(body.classList.toggle("dark"),localStorage.setItem("THEME","dark")):(body.classList.toggle("dark"),localStorage.setItem("THEME","light"))}))})();
-//# sourceMappingURL=index.9707ee13.js.map
