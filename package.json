@@ -7,6 +7,11 @@
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /TimesNews/"
   },
+
+  "babel": {
+  "presets": ["@babel/preset-env"]
+},
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UA-Viktor/TimesNews.git"
