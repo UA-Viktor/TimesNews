@@ -1,5 +1,7 @@
 import menuburger from './js/menu-burger';
-import themeSwitcher from './js/theme-switcher';
+// import themeSwitcher from './js/theme-switcher';
 
 menuburger();
-themeSwitcher();
+// themeSwitcher();
+
+import './js/theme-switcher';
