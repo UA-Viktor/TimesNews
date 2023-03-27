@@ -1,7 +1,6 @@
 .theme-switcher-container {
-  // display: none;
-  // position: absolute;
-  // right: 0;
+    display: flex;
+    gap: 10px;
 
   @media screen and (min-width: $tablet) {
     display: flex;

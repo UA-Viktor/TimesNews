@@ -1,9 +1,7 @@
 const COLOR = 'THEME';
-
 const body = document.querySelector('body');
 const themeSwitcher = document.querySelector('.theme-switcher');
 
-// export default asd = () => {
 if (localStorage.getItem(COLOR)) {
   body.classList.toggle(localStorage.getItem(COLOR));
   if (localStorage.getItem(COLOR) === 'dark') {
@@ -20,4 +18,3 @@ themeSwitcher.addEventListener('change', e => {
     localStorage.setItem(COLOR, 'light');
   }
 });
-// };
