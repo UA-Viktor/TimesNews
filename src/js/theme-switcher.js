@@ -1,7 +1,7 @@
 const COLOR = 'THEME';
 
-body = document.querySelector('body');
-themeSwitcher = document.querySelector('.theme-switcher');
+const body = document.querySelector('body');
+const themeSwitcher = document.querySelector('.theme-switcher');
 
 // export default asd = () => {
 if (localStorage.getItem(COLOR)) {
