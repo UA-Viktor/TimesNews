@@ -1,6 +1,8 @@
 import './js/menu-burger';
 import './js/theme-switcher';
 
+import moment from 'moment';
+
 //
 
 // Достаем карточки
@@ -13,8 +15,6 @@ const newsHTML = document.querySelector('.news-set');
 
 const getDataNews = new ServiceApi();
 getDataNews.serviceApiData().then(news => {
-  console.log(news);
-
   renderNews(news);
 });
 
@@ -25,8 +25,7 @@ function renderNews(news) {
 function renderNewsCard(news) {
   return news
     .map(({ title, abstract, multimedia, published_date }) => {
-      // console.log(media[0]['media-metadata'][3].url);
-      // ${asd}
+      const dateNew = moment(published_date).format('DD/MM/YYYY');
       return `
           <li class="news-item">
             <article class="news-item__product">
@@ -53,7 +52,7 @@ function renderNewsCard(news) {
                 <p class="news-item__text">
                   ${abstract}...</p>
                 <div class="news-item__info">
-                  <span class="news-item__info-data">${published_date}</span>
+                  <span class="news-item__info-data">${dateNew}</span>
                   <button class="news-item__info-button">Read more</button>
                 </div>
               </div>

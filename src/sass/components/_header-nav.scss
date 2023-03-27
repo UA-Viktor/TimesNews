@@ -30,12 +30,10 @@
   display: flex;
   align-items: center;
 
-  &:hover {
-    background-color: $text-color-accent;
+  border-bottom: 2px solid $bg-color-primary;
 
-    .header-nav-text {
-      color: $bg-color-primary;
-    }
+  &:hover {
+    border-bottom: 2px solid $text-color-accent;
   }
 
   @media screen and (min-width: $tablet) {
@@ -47,10 +45,11 @@
 }
 
 .dark .header-nav-li {
+  border-bottom: 2px solid $bg-color-dark;
   background-color: $bg-color-dark;
 
   &:hover {
-    background-color: $text-color-accent;
+    border-bottom: 2px solid $text-color-accent;
 
     .header-nav-svg-arrow {
       stroke: $bg-color-primary;

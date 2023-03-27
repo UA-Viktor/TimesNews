@@ -1,17 +1,13 @@
 .news-set {
   display: flex;
   flex-wrap: wrap;
-  // margin-left: -16px;
-  // margin-top: -16px;
 
   @media screen and (min-width: $tablet) {
     margin-left: -16px;
     margin-top: -16px;
-    // gap: 30px;
   }
 
   @media screen and (min-width: $desktop) {
-    // gap: 32px;
   }
 }
 
@@ -26,6 +22,8 @@
     flex-basis: calc(100% / 3 - 16px);
     margin-left: 16px;
     margin-top: 16px;
+    display: flex;
+    gap: 30px;
 
     margin-bottom: 16px;
 
@@ -124,34 +122,50 @@
 
 .news-item__heading {
   margin: 20px 0;
+  height: 99px;
+
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 24px;
+  line-height: 1.38;
   letter-spacing: -0.01em;
 
-  color: #111321;
+  color: $text-color-primary;
 
-  width: 353px;
-  height: 132px;
   overflow: hidden;
+  cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    height: 132px;
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
 }
 
 .news-item__text {
   margin-bottom: 20px;
+  height: 57px;
 
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 1.35;
 
-  color: #111321;
+  color: $text-color-primary;
 
-  width: 353px;
-  height: 66px;
   overflow: hidden;
+
+  @media screen and (min-width: $tablet) {
+    height: 66px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
 }
 
 .news-item__info {
@@ -175,13 +189,20 @@
 .news-item__info-button {
   border: none;
   background-color: $bg-color-primary;
+  cursor: pointer;
 
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  /* identical to box height */
+  font-size: 14px;
+  line-height: 1.37;
 
   color: #4440f7;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
 }

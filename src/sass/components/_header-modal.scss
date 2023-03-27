@@ -42,11 +42,16 @@
   }
 }
 
+
+
 .modal.is-hidden {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
+  background-color: $bg-color-primary;
+
+  
   .header-nav-ul {
     display: flex;
   }
